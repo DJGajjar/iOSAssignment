@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FacilitiesOptionCell" id="KGk-i7-Jjw" customClass="FacilitiesOptionCell" customModule="iOSAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="J4Y-UK-oVB">
+                        <rect key="frame" x="10" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6bn-rf-UQ1"/>
+                            <constraint firstAttribute="height" constant="20" id="X4e-uh-WVE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTp-6L-bVP">
+                        <rect key="frame" x="40" y="15" width="240" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="C2G-Wm-dXq"/>
+                            <constraint firstAttribute="height" constant="20" id="LMf-lI-BLe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.16862745100000001" green="0.1960784314" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZk-7C-MAY">
+                        <rect key="frame" x="8" y="49.666666666666664" width="304" height="0.3333333333333357"/>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.19607843137254902" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="QD0-Ag-0ch"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-YE-ygR">
+                        <rect key="frame" x="294" y="17" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="8Z4-gx-wv3"/>
+                            <constraint firstAttribute="width" constant="16" id="mSJ-gI-qYL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rTp-6L-bVP" firstAttribute="leading" secondItem="J4Y-UK-oVB" secondAttribute="trailing" constant="10" id="4q8-2o-ozp"/>
+                    <constraint firstItem="rTp-6L-bVP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6se-rd-m9k"/>
+                    <constraint firstItem="J4Y-UK-oVB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7R5-RK-uYn"/>
+                    <constraint firstAttribute="trailing" secondItem="Xlb-YE-ygR" secondAttribute="trailing" constant="10" id="IGu-sd-l3d"/>
+                    <constraint firstAttribute="bottom" secondItem="rZk-7C-MAY" secondAttribute="bottom" id="MAb-Hx-2vJ"/>
+                    <constraint firstItem="Xlb-YE-ygR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MhB-lv-fVq"/>
+                    <constraint firstItem="rZk-7C-MAY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="OHs-mA-Dtn"/>
+                    <constraint firstAttribute="trailing" secondItem="rZk-7C-MAY" secondAttribute="trailing" constant="8" id="a0k-Mi-FUS"/>
+                    <constraint firstItem="J4Y-UK-oVB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cpq-JI-U8w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCheck" destination="Xlb-YE-ygR" id="feY-VO-bar"/>
+                <outlet property="imgFacilities" destination="J4Y-UK-oVB" id="DKO-TE-1ut"/>
+                <outlet property="lblOptionName" destination="rTp-6L-bVP" id="b6Z-rP-YyF"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Check" width="24" height="24"/>
+        <image name="boat" width="25" height="25"/>
+    </resources>
+</document>
